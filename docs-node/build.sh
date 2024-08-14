@@ -5,3 +5,7 @@ fi
 
 curl https://raw.githubusercontent.com/mongodb/docs-worker-pool/netlify-poc-prefix/scripts/build-site.sh -o build-site.sh 
 sh build-site.sh
+
+if [[ -z "${PATH_PREFIX}" ]]; then
+ cd public && mkdir ${PATH_PREFIX} && mv * ${PATH_PREFIX}
+fi
