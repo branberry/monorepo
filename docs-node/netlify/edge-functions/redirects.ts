@@ -18,10 +18,10 @@ export default async (req: Request): Promise<Response | undefined> => {
 
   const updatedPath = match.input?.split(version)[1] ?? ''
   // Construct a new URL to return
-  const hostname = `${version.replace('.', '-')}--docs-node-branfork.netlify.app`;
-  const url = new URL(`https://${hostname}`);
+  const hostname = `${version.replace('.', '-')}--bran-monorepo-docs-node.netlify.app`;
+  const url = new URL(`https://${hostname}/`);
 
-  url.pathname = updatedPath;
+  url.pathname = version;
   console.log('url', url);
 
   return fetch(url);
