@@ -15,3 +15,6 @@ force_run_in_build = true
 [build]
 publish = "snooty/public"
 command = ". ./build.sh"
+
+[context."v2".environment]
+PATH_PREFIX = "v2"
