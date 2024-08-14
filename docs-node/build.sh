@@ -6,6 +6,6 @@ fi
 curl https://raw.githubusercontent.com/mongodb/docs-worker-pool/netlify-poc-prefix/scripts/build-site.sh -o build-site.sh 
 sh build-site.sh
 
-if [[ -v "${PATH_PREFIX}" ]]; then
+if [[ -v PATH_PREFIX ]]; then
  cd snooty/public && mkdir ${PATH_PREFIX} && mv * ${PATH_PREFIX}
 fi
