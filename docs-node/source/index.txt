@@ -1,5 +1,5 @@
 ===================
-MongoDB Node Driver monorepo commit 1 commit 2 commit 3
+MongoDB Node Driver v2
 ===================
 
 .. facet::
