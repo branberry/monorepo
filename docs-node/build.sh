@@ -10,5 +10,5 @@ if [[ -v PATH_PREFIX ]]; then
   if [[ -d "snooty/public/${PATH_PREFIX}" ]]; then 
     rm "snooty/public/${PATH_PREFIX}"
   fi
- cd snooty/public && mkdir ${PATH_PREFIX} && mv !(${PATH_PREFIX}) ${PATH_PREFIX}
+ cd snooty/public && mkdir ${PATH_PREFIX} && mv * ${PATH_PREFIX} || true
 fi
