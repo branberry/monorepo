@@ -1,5 +1,5 @@
 ===================
-MongoDB Node Driver v2
+MongoDB Node Driver v6.2
 ===================
 
 .. facet::
