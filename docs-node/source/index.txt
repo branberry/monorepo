@@ -1,5 +1,5 @@
 ===================
-MongoDB Node Driver v2
+Don't publish v2
 ===================
 
 .. facet::
